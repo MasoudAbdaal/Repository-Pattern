@@ -18,9 +18,20 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
+    public record Hello
+    {
+        public required int Length { get; init; }
+        public required string Name { get; init; }
+    }
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
+        var z = new Hello() { Length = 12, Name = "Ali" };
+
+        if (z.Name is "ALi"  )
+        {
+
+        }
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
             Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

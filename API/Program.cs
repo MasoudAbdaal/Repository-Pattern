@@ -1,8 +1,19 @@
+using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Persistence.Contexts;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+builder.Services.AddDbContextPool<ApplicationDbContext<User>>(options =>
+{
+    options.UseSqlServer(
+        builder.Configuration.GetValue<string>("Database:ConnectionString"),
+        x => { x.MigrationsAssembly(typeof(ApplicationDbContext<User>).Assembly.FullName); });
+});
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
