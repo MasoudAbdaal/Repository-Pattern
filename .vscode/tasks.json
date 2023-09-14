@@ -36,6 +36,19 @@
         "${workspaceFolder}/Repository-Pattern.sln"
       ],
       "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Add Migrations",
+      "icon": {
+        "color": "terminal.ansiGreen"
+      },
+      "type": "shell",
+      "command": "dotnet ef migrations add InitialCreate --project .\\Persistence\\ --startup-project .\\API --context ApplicationDbContext",
+      "problemMatcher": "$msCompile",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Remove Migrations"
+      ]
     }
   ]
 }

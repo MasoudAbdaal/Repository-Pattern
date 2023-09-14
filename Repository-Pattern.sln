@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{0B3F55DE-2C6E-46C0-8E72-F7E3E1B95C43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{802BBFEF-E480-4E9E-AAA7-AE0FE68184A2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{6272FAAA-1085-43FD-90DB-11EA5F654BF8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{71E22F88-73C6-4F9F-B1C1-731E03A30377}"
@@ -32,10 +30,6 @@ Global
 		{0B3F55DE-2C6E-46C0-8E72-F7E3E1B95C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B3F55DE-2C6E-46C0-8E72-F7E3E1B95C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B3F55DE-2C6E-46C0-8E72-F7E3E1B95C43}.Release|Any CPU.Build.0 = Release|Any CPU
-		{802BBFEF-E480-4E9E-AAA7-AE0FE68184A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{802BBFEF-E480-4E9E-AAA7-AE0FE68184A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{802BBFEF-E480-4E9E-AAA7-AE0FE68184A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{802BBFEF-E480-4E9E-AAA7-AE0FE68184A2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6272FAAA-1085-43FD-90DB-11EA5F654BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6272FAAA-1085-43FD-90DB-11EA5F654BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6272FAAA-1085-43FD-90DB-11EA5F654BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU

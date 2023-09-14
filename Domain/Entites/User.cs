@@ -2,18 +2,18 @@ using Domain.Constants;
 
 namespace Domain.Entities;
 
-internal record User : IEntity
+public record User : IEntity
 {
-    public string? Email { get; set; }
+    public required string Email { get; set; }
 
-    public string? UserName { get; set; }
+    public required string? UserName { get; set; }
 
-    public byte[]? Password { get; set; }
+    public required byte[]? Password { get; set; }
 
-    public byte[]? PasswordSalt { get; set; }
+    public required byte[]? PasswordSalt { get; set; }
 
-    public byte[]? ResetPasswordToken { get; set; }
+    public  byte[]? ResetPasswordToken { get; set; }
 
-    public string UserRole { get; set; } = Roles.ADMIN.ToString();
+    public required string UserRole { get; set; } = Roles.ADMIN.ToString();
 
 }
